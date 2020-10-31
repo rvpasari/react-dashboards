@@ -15,11 +15,18 @@ class GoogleCharts extends React.Component {
 
     render(){
         return ( 
-        <div style = {{display: 'flex', maxWidth: 900}}>
+        <div style = {{display: 'flex', maxWidth: 1400}}>
             <Chart 
-                width={700}
+                width={800}
                 height={500}
-                chartType="BarChart"
+                chartType="ColumnChart"
+                chartEvents={[
+                {
+                    //eventName: 'select',
+                    
+                    
+                    }
+                ]}
                 loader={<div>Loading Chart</div>}
                 data = {[
                     ["label", "value"], 
@@ -44,7 +51,7 @@ class GoogleCharts extends React.Component {
             /> 
 
             <Chart 
-                width={700}
+                width={800}
                 height={500}
                 chartType="PieChart"
                 loader={<div>Loading Chart</div>}
