@@ -6,7 +6,7 @@ import ReactFC from 'react-fusioncharts';
 import FusionCharts from 'fusioncharts';
 import Column2D from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-
+import GoogleCharts from './Components/googlecharts';
 
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
@@ -67,7 +67,8 @@ const chartConfigs = {
 
 class App extends React.Component { 
   render() { 
-    return (<ReactFC {...chartConfigs}/>);
+    //return (<ReactFC {...chartConfigs}/>);
+    return (<GoogleCharts />);
   }
 }
 
