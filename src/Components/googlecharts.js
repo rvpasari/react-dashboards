@@ -7,11 +7,9 @@ class GoogleCharts extends React.Component {
     constructor(props) { 
         super(props);
         this.state = { 
-
         };
 
     }
-
 
     render(){
         return ( 
@@ -20,13 +18,6 @@ class GoogleCharts extends React.Component {
                 width={800}
                 height={500}
                 chartType="ColumnChart"
-                chartEvents={[
-                {
-                    //eventName: 'select',
-                    
-                    
-                    }
-                ]}
                 loader={<div>Loading Chart</div>}
                 data = {[
                     ["label", "value"], 
